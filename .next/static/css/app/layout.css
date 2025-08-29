@@ -563,8 +563,8 @@ video {
 .h-8 {
   height: 2rem;
 }
-.h-\[240px\] {
-  height: 240px;
+.h-\[270px\] {
+  height: 270px;
 }
 .h-\[320px\] {
   height: 320px;
@@ -574,9 +574,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.h-\[270px\] {
-  height: 270px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -590,17 +587,14 @@ video {
 .w-8 {
   width: 2rem;
 }
-.w-\[440px\] {
-  width: 440px;
+.w-\[480px\] {
+  width: 480px;
 }
 .w-\[520px\] {
   width: 520px;
 }
 .w-full {
   width: 100%;
-}
-.w-\[480px\] {
-  width: 480px;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -692,10 +686,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
-.bg-rose-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 228 230 / var(--tw-bg-opacity, 1));
-}
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
@@ -731,6 +721,9 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -745,6 +738,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .py-16 {
   padding-top: 4rem;
@@ -868,36 +865,34 @@ video {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-/* Custom globals */
-:root {
-  --brand: #0f172a;
-}
-html, body, #__next {
-  height: 100%;
-}
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
 .hover\:text-slate-900:hover {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity, 1));
 }
+
 @media (min-width: 640px) {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
+
 @media (min-width: 768px) {
 
   .md\:order-1 {
@@ -940,6 +935,14 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
