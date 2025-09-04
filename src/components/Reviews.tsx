@@ -15,14 +15,14 @@ const reviews: Review[] = [
     rating: 4.8,
   },
   {
-    logo: "/images/trustpilot.png",
+    logo: "/images/Trustpilot.png",
     name: "Trustpilot",
     rating: 4.7,
   },
   {
     logo: "/images/producthunt.png",
     name: "Product Hunt",
-    rating: 5.0,
+    rating: 4.9,
   },
 ];
 
@@ -41,13 +41,14 @@ const Star = ({ filled }: { filled: boolean }) => (
 // ------------------ Main Section ------------------
 export default function Reviews() {
   return (
-    <section className="bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+    <section className="bg-white py-16">
+      <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Intro Text */}
-        <p className="text-slate-500">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">We're in good form... just ask our customers</h2>
+        <p className="text-slate-500 max-w-3xl mx-auto">
           Loved by 10K+ business owners and creators. Trusted by millions of respondents.
         </p>
-        <p className="mt-2 text-slate-600">
+        <p className="mt-2 text-slate-600 max-w-3xl mx-auto">
           Average rating of <span className="font-semibold">4.8 out of 5</span> from{" "}
           <span className="font-semibold">298 reviews</span> across Capterra, Trustpilot, and Product Hunt.
         </p>
@@ -57,7 +58,7 @@ export default function Reviews() {
           {reviews.map((review, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center justify-between bg-white shadow-md rounded-2xl p-6 h-full"
+              className="flex flex-col items-center justify-between bg-white shadow-lg rounded-2xl p-6 h-full hover:shadow-xl transition-shadow"
             >
               {/* Logo */}
               <Image
@@ -65,7 +66,7 @@ export default function Reviews() {
                 alt={review.name}
                 width={120}
                 height={40}
-                className="mb-4 object-contain"
+                className="mb-4 object-contain h-12"
               />
 
               {/* Stars */}

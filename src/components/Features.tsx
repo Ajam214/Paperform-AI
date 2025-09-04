@@ -21,16 +21,16 @@ const features = [
 export default function Features() {
 	return (
 		<section className="bg-gradient-to-r from-blue-50 to-purple-100">
-			<div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
-				<h3 className="text-3xl font-bold">
+			<div className="max-w-6xl mx-auto px-6 py-20">
+				<h3 className="text-3xl font-bold text-center">
 					Stunningly smart, uniquely yours.
 				</h3>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 w-full">
+				<div className="mt-12 grid md:grid-cols-3 gap-8">
 					{features.map((f, i) => (
 						<div
 							key={i}
-							className="w-full flex flex-col items-center justify-between bg-white shadow-md rounded-2xl p-4 sm:p-6 h-auto"
+							className="p-6 bg-gray-50 rounded-xl shadow-sm text-center"
 						>
 							{/* ✅ Icon */}
 							<div className="flex justify-center mb-4">

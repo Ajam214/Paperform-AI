@@ -5,6 +5,10 @@ import Stats from "@/components/Stats";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Section4 from "@/components/Section4";
+import Section5 from "@/components/Section5"
+import Section6 from "@/components/Section6"
+
+
 
 export default function Home() {
   return (
@@ -16,6 +20,9 @@ export default function Home() {
         <Stats />
         <Features />
         <Section4 />
+        <Section5 />
+        <Section6 />
+       
       </main>
       <Footer />
     </div>
