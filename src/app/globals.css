@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+/* ==== Custom Shapes for Paperform clone ==== */
+.clip-left {
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.clip-right {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
