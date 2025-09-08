@@ -5,12 +5,13 @@ import Stats from "@/components/Stats";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Section4 from "@/components/Section4";
-import Section5 from "@/components/Section5"
-import Section6 from "@/components/Section6"
-import Section7 from "@/components/Section7"
-import Section8 from "@/components/Section8"
-import Section9 from "@/components/Section9"
-import Section10 from "@/components/section10";
+import Section5 from "@/components/Section5";
+import Section6 from "@/components/Section6";
+import Section7 from "@/components/Section7";
+import Section8 from "@/components/Section8";
+import Section9 from "@/components/Section9";
+import Section10 from "@/components/Section10";
+
 
 
 

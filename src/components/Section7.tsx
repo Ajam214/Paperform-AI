@@ -8,7 +8,7 @@ const useCounter = (end: number, duration = 2000) => {
 
   useEffect(() => {
     let start = 0;
-    const increment = end / (duration / 16); // ~60fps
+    const increment = end / (duration / 16); 
     const timer = setInterval(() => {
       start += increment;
       if (start >= end) {
@@ -33,7 +33,7 @@ const stats = [
 const Section7 = () => {
   return (
     <div className="w-full">
-      {/* 🔵 First Section: Blue Hero */}
+      {/*First Section: Blue Hero */}
       <section className="w-full min-h-screen bg-[#002b3a] flex items-center justify-center">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl px-6">
           {/* Logo / Icon */}
@@ -57,7 +57,7 @@ const Section7 = () => {
         </div>
       </section>
 
-      {/* 🟡 Second Section: Beige Stats */}
+      {/* Second Section: Beige Stats */}
       <section className="w-full min-h-screen bg-[#f5f2eb] flex items-center justify-center py-20 px-6">
         <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {stats.map((item, idx) => {
